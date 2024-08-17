@@ -27,4 +27,14 @@
     <Reference Include="..\..\libs\ARM64\Wox.Infrastructure.dll" />
     <Reference Include="..\..\libs\ARM64\Wox.Plugin.dll" />
   </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\plugin.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\..\img\*.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Images/%(Filename)%(Extension)</TargetPath>
+    </None>
+  </ItemGroup>
 </Project>
