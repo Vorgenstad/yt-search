@@ -8,7 +8,7 @@
     "Language": "csharp",
     "Website": "https://github.com/Vorgenstad/yt-search",
     "ExecuteFileName": "Community.PowerToys.Run.Plugin.YoutubeSearch.dll",
-    "IcoPathDark": "..\\..\\img\\YoutubeSearch.png",
-    "IcoPathLight": "..\\..\\img\\YoutubeSearch.png",
+    "IcoPathDark": "Images\\YoutubeSearch.png",
+    "IcoPathLight": "Images\\YoutubeSearch.png",
     "DynamicLoading": false
 }
