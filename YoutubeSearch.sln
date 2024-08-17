@@ -9,6 +9,8 @@ Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
 		Release|x64 = Release|x64
+		Debug|ARM64 = Debug|ARM64
+		Release|ARM64 = Release|ARM64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -18,5 +20,9 @@ Global
 		{B1D80A84-DF51-4987-BEDE-4C26BFE0D492}.Debug|x64 CPU.Build.0 = Debug|x64
 		{B1D80A84-DF51-4987-BEDE-4C26BFE0D492}.Release|x64 CPU.ActiveCfg = Release|x64
 		{B1D80A84-DF51-4987-BEDE-4C26BFE0D492}.Release|x64 CPU.Build.0 = Release|x64
+		{B1D80A84-DF51-4987-BEDE-4C26BFE0D492}.Debug|ARM64 CPU.ActiveCfg = Debug|ARM64
+		{B1D80A84-DF51-4987-BEDE-4C26BFE0D492}.Debug|ARM64 CPU.Build.0 = Debug|ARM64
+		{B1D80A84-DF51-4987-BEDE-4C26BFE0D492}.Release|ARM64 CPU.ActiveCfg = Release|ARM64
+		{B1D80A84-DF51-4987-BEDE-4C26BFE0D492}.Release|ARM64 CPU.Build.0 = Release|ARM64
 	EndGlobalSection
 EndGlobal
