@@ -17,6 +17,8 @@ public class Main : IPlugin
 
     private PluginInitContext? Context { get; set; }
 
+    private const string IconPath = "Images/YoutubeSearch.png";
+
     public void Init(PluginInitContext context)
     {
         Context = context ?? throw new ArgumentNullException(nameof(context));
@@ -26,6 +28,10 @@ public class Main : IPlugin
     [
         new()
         {
+            QueryTextDisplay = query.Search,
+            IcoPath = IconPath,
+            Title = query.Search,
+            SubTitle = "Search on Youtube",
             Action = _ =>
             {
                 Log.Info($"Searching for: {query.Search}", GetType());
