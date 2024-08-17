@@ -1,6 +1,9 @@
 using System;
 using System.Collections.Generic;
+using Wox.Infrastructure;
 using Wox.Plugin;
+using Wox.Plugin.Common;
+using Wox.Plugin.Logger;
 
 namespace Community.PowerToys.Run.Plugin.YoutubeSearch;
 
@@ -19,8 +22,27 @@ public class Main : IPlugin
         Context = context ?? throw new ArgumentNullException(nameof(context));
     }
 
-    public List<Result> Query(Query query)
-    {
-        throw new NotImplementedException();
-    }
+    public List<Result> Query(Query query) =>
+    [
+        new()
+        {
+            Action = _ =>
+            {
+                Log.Info($"Searching for: {query.Search}", GetType());
+
+                var url = $"https://www.youtube.com/results?search_query={query.Search}";
+
+                if (!Helper.OpenCommandInShell(DefaultBrowserInfo.Path, DefaultBrowserInfo.ArgumentsPattern, url))
+                {
+                    Log.Error("Opening default browser failed", GetType());
+
+                    Context?.API.ShowMsg($"Plugin: {Name}", "Opening default browser failed.");
+
+                    return false;
+                }
+
+                return true;
+            }
+        },
+    ];
 }
