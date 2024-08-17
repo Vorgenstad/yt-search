@@ -9,7 +9,7 @@ A plugin for [PowerToys Run](https://github.com/microsoft/PowerToys) for searchi
 ## Installation
 - Download the [latest release](https://github.com/Vorgenstad/yt-search/releases/).
 - Close PowerToys.
-- Extract the archive to %LOCALAPPDATA%\Microsoft\PowerToys\PowerToys Run\Plugins.
+- Extract the archive to `%LOCALAPPDATA%\Microsoft\PowerToys\PowerToys Run\Plugins`.
 - Open PowerToys.
 ## Usage
 - Open Powertoys Run (`alt+space` by default).
