@@ -484,3 +484,6 @@ $RECYCLE.BIN/
 *.swp
 
 .vscode/
+
+!*libs/x64
+!*libs/ARM64
