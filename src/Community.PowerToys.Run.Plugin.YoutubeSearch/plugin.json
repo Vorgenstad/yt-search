@@ -1,0 +1,14 @@
+{
+    "ID": "af5d01d01290452d9b26e15c2c8a64fe",
+    "ActionKeyword": "yt",
+    "IsGlobal": false,
+    "Name": "YoutubeSearch",
+    "Author": "Vorgenstad",
+    "Version": "1.0.0",
+    "Language": "csharp",
+    "Website": "https://github.com/Vorgenstad/yt-search",
+    "ExecuteFileName": "Community.PowerToys.Run.Plugin.YoutubeSearch.dll",
+    "IcoPathDark": "Images\\YoutubeSearch.png",
+    "IcoPathLight": "Images\\YoutubeSearch.png",
+    "DynamicLoading": false
+}
